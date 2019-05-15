@@ -6,6 +6,10 @@ import App from './App';
 describe('<App />', () => {
   // 2. write this test
 
+  it('runs the tests', () => {
+    expect(true).toBe(true)
+  })
+
   // add .skip to skip this test
   // it.skip('matches snapshot', => )
   it('matches snapshot', () => {
