@@ -1,5 +1,6 @@
 const helpers = require('./helpers.js')
 
+//Can add mocks file with exports, or add what you want to override here
 jest.mock('uuid', () => {
     return () => '1234'
 })
