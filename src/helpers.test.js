@@ -18,4 +18,17 @@ describe('helpers', () => {
             expect(actual).toEqual(expected)
         })
     })
+
+    describe('forEvenOnly()', () => {
+        it('should invoke callback using the number passed when given an even number', () => {
+            const spy = jest.fn();
+            helpers.forEvenOnly(2, spy);
+            helpers.forEvenOnly(4, spy);
+
+            expect(spy).toHaveBeenCalledTimes(2);
+            expect(spy).toHaveBeenNthCalledWith(1, 2);
+            expect(spy).toHaveBeenNthCalledWith(2, 4);
+        });
+    })
+
 })
