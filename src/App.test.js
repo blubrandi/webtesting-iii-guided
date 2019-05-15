@@ -7,6 +7,7 @@ describe('<App />', () => {
   // 2. write this test
 
   // add .skip to skip this test
+  // it.skip('matches snapshot', => )
   it('matches snapshot', () => {
     const tree = banana.create(<App />); // generates a DOM tree
 
