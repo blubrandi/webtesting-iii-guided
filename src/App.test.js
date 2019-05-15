@@ -7,6 +7,7 @@ describe('<App />', () => {
   // 2. write this test
 
   //Add .only to run only that specific test
+  // it.only('matches snapshot', => )
   it('runs the tests', () => {
     expect(true).toBe(true)
   })
