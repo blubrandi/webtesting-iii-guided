@@ -1,16 +1,20 @@
 const helpers = require('./helpers.js')
 
+jest.mock('uuid', () => {
+    return () => '1234'
+})
+
 describe('helpers', () => {
-
     describe('makePerson', () => {
-
         it('should create a person', () => {
+            const expected = {
+                id: '1234',
+                name: 'Frodo Baggins'
+            }
 
-            const expected = { id: 'how do I know the id from the db?', name: 'Frodo Baggins' }
+            const actual = helpers.makePerson('Frodo', 'Baggins')
 
-            const actual - helpers.makePerson('Frodo', 'Baggins')
-
-            expect(actual).toBe(expected)
+            expect(actual).toEqual(expected)
         })
     })
 })
