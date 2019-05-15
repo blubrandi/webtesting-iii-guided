@@ -8,7 +8,7 @@ exports[`<App /> matches snapshot 1`] = `
     className="App-header"
   >
     <h2>
-      Learn React
+      Learn React With Us
     </h2>
   </header>
 </div>
