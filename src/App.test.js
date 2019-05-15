@@ -6,6 +6,7 @@ import App from './App';
 describe('<App />', () => {
   // 2. write this test
 
+  //Add .only to run only that specific test
   it('runs the tests', () => {
     expect(true).toBe(true)
   })
