@@ -21,6 +21,7 @@ describe('helpers', () => {
 
     describe('forEvenOnly()', () => {
         it('should invoke callback using the number passed when given an even number', () => {
+
             const spy = jest.fn();
             helpers.forEvenOnly(2, spy);
             helpers.forEvenOnly(4, spy);
