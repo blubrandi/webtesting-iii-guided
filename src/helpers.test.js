@@ -38,6 +38,13 @@ describe('helpers', () => {
 
             expect(spy).not.toHaveBeenCalled();
         });
+
+        it('returns a smile', () => {
+            const spy = jest.fn(() => 'smile')
+
+            const greeting = helpers.greet(spy)
+            expect(greeting).toBe('frown')
+        })
     })
 
 })

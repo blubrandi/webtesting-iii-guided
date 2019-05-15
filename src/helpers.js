@@ -16,3 +16,7 @@ function forEvenOnly(number, callback) {
         callback(number);
     }
 }
+
+function greeter(callback) {
+    return cb()
+}
