@@ -30,6 +30,14 @@ describe('helpers', () => {
             expect(spy).toHaveBeenNthCalledWith(1, 2);
             expect(spy).toHaveBeenNthCalledWith(2, 4);
         });
+
+        it('should NOT invoke callback when given an odd number', () => {
+            const spy = jest.fn();
+
+            helpers.forEvenOnly(1, spy);
+
+            expect(spy).not.toHaveBeenCalled();
+        });
     })
 
 })
